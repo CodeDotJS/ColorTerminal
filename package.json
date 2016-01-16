@@ -1,0 +1,32 @@
+{
+  "name": "ColorTerminal",
+  "version": "1.0",
+  "description": "fills your terminal with colorful lines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeDotJS/ColorTerminal"
+  },
+  "keywords": [
+    "color",
+    "terminal"
+  ],
+  "author": "DotJS",
+  "license": "No License",
+  "bugs": {
+    "url": ""
+  },
+  "bin": {
+    "pfp": "index.js"
+    },
+  "dependencies": {
+    "ansi-rainbow": "1.0.0",
+    "chalk": "^1.1.1",
+    "minimist": "^1.2.0"
+  },
+
+  "homepage": "http://rishigiri.com"
+}
