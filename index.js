@@ -15,7 +15,7 @@ var l = ini.length
 var spaces = ''
 var i = 0
 for (; i < l; i++) {
-    spaces.length += 2;
+    spaces += ' ';
 }
 
 ansi
