@@ -29,4 +29,9 @@ ansi
 
 console.log(ansi.bg(spaces))
 console.log(chalk.black(ansi.bg(ini)))
-console.log(ansi.bg(spaces))
+
+var count = 0
+for (var tempIn = 0; tempIn < 37; tempIn++) {
+	console.log(ansi.bg(spaces))
+	count+=1
+}
