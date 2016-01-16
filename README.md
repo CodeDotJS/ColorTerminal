@@ -11,12 +11,12 @@ A screenshot :
 
 Procedure to run this program :
 
--- Install npm 
+- Install npm 
 
--- cd path/to/this/folder
+- cd path/to/this/folder
 
--- no need of npm install
+- no need of npm install
 
--- node index.js . [ a dot because, it requires an argument to calculate the string's lenght for making lines ] 
+- node index.js . [ a dot because, it requires an argument to calculate the string's lenght for making lines ] 
 
--- you can change [.] to any sentence of char.length === 160. So, it's better to use [.]
+- you can change [.] to any sentence of char.length === 160. So, it's better to use [.]
