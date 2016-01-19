@@ -25,7 +25,7 @@ ansi
     })
     .skip(ansi._backgrounds)
     .skip(ansi._colors)
-    .add('bgGreen')
+    .add('bgBlack')
 console.log(ansi.bg(spaces))
 console.log(chalk.black(ansi.bg(ini)))
 
