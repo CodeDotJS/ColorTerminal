@@ -18,15 +18,15 @@ for (; i < l; i++) {
   spaces += ' ';
 }
 
-ansi 
-  .add('black', 'white')
-  .reset() 
-  .skip(ansi._backgrounds) 
-  .add('bgBlue bgMagenta bgCyan') 
+ansi //options
+  .add('black', 'white') 
+  .reset() //we do not want black and white anymore - note it does not reset options only colors
+  .skip(ansi._backgrounds) //skips backgrounds
+  .add('bgBlue bgMagenta bgCyan') //this will keep order when rainbowified
   .options({
     color_space: true,
     gap: 1
-  }) 
+  }) //this will force color spaces and change color every 3 characters
 
 console.log(ansi.bg(spaces))
 console.log(chalk.black(ansi.bg(ini)))
