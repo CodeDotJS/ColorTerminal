@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+var argv = require('minimist')(process.argv.slice(2));
+var ansi = require('ansi-rainbow')
+var chalk = require('chalk')
+
+var ini = argv._.join(' ')
+
+while (ini.length % 160 !== 0) {
+  ini += ' '
+}
+
+var l = ini.length
+
+var spaces = ''
+var i = 0
+for (; i < l; i++) {
+  spaces += ' ';
+}
+
+ansi 
+  .add('black', 'white')
+  .reset() 
+  .skip(ansi._backgrounds) 
+  .add('bgBlue bgMagenta bgCyan') 
+  .options({
+    color_space: true,
+    gap: 1
+  }) 
+
+console.log(ansi.bg(spaces))
+console.log(chalk.black(ansi.bg(ini)))
+
+var count = 0;
+for (var tempIn = 0; tempIn < 37; tempIn++) {
+  console.log(ansi.bg(spaces))
+  count += 1
+}
