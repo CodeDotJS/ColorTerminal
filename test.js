@@ -19,7 +19,7 @@ for (; i < l; i++) {
 }
 
 ansi //options
-  .add('black', 'white') 
+  .add('black', 'white')
   .reset() //we do not want black and white anymore - note it does not reset options only colors
   .skip(ansi._backgrounds) //skips backgrounds
   .add('bgBlue bgMagenta bgCyan') //this will keep order when rainbowified
